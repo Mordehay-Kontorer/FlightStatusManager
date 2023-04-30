@@ -1,0 +1,3 @@
+Flight ID,Departure,Arrival,Success,Origin,Destination
+A12,09:00,17:00,"",JFK,LAX
+A14,19:00,20:00,"",LAX,JFK
