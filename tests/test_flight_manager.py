@@ -19,14 +19,14 @@ class TestFlight(unittest.TestCase):
 class TestFlightService(unittest.TestCase):
     def setUp(self):
         self.TEST_PATH = os.getcwd()
-        self.flight_service = FlightService(rf'{self.TEST_PATH}\tests\csv_files\flights.csv')
-        self.invalid_csv_path = rf"{self.TEST_PATH}\tests\csv_files\invalid_csv.csv"
-        self.invalid_flight_id_csv_path = rf"{self.TEST_PATH}\tests\csv_files\invalid_flight_id_format.csv"
-        self.non_existent_csv_path = rf"{self.TEST_PATH}\tests\csv_files\non_existent.csv"
-        self.empty_file_path = rf"{self.TEST_PATH}\tests\csv_files\empty_file.csv"
-        self.txt_file_path = rf"{self.TEST_PATH}\tests\csv_files\txt_file.txt"
-        self.more_then_20_path = rf"{self.TEST_PATH}\tests\csv_files\more_than_20_success.csv"
-        self.updated_flights = rf"{self.TEST_PATH}\tests\csv_files\updated_flights.csv"
+        self.flight_service = FlightService(rf'{self.TEST_PATH}\csv_files\flights.csv')
+        self.invalid_csv_path = rf"{self.TEST_PATH}\csv_files\invalid_csv.csv"
+        self.invalid_flight_id_csv_path = rf"{self.TEST_PATH}\csv_files\invalid_flight_id_format.csv"
+        self.non_existent_csv_path = rf"{self.TEST_PATH}\csv_files\non_existent.csv"
+        self.empty_file_path = rf"{self.TEST_PATH}\csv_files\empty_file.csv"
+        self.txt_file_path = rf"{self.TEST_PATH}\csv_files\txt_file.txt"
+        self.more_then_20_path = rf"{self.TEST_PATH}\csv_files\more_than_20_success.csv"
+        self.updated_flights = rf"{self.TEST_PATH}\csv_files\updated_flights.csv"
 
     def test_get_flights(self):
         flights = self.flight_service.get_flights()
